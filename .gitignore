@@ -1,20 +1,93 @@
-# Python cache
+# ==============================
+
+# Python cache files
+
+# ==============================
 
 **pycache**/
 *.py[cod]
+*$py.class
+
+# ==============================
 
 # Virtual environments
 
+# ==============================
+
 .venv/
 venv/
+env/
+ENV/
 
-# Secrets
+# ==============================
+
+# Environment variables and secrets
+
+# ==============================
 
 .env
 .env.*
+!.env.example
 
-# Local database and generated output
+# ==============================
+
+# Generated output files
+
+# ==============================
+
+output/
+outputs/
+
+# ==============================
+
+# Local databases and vector stores
+
+# ==============================
 
 PSlevel1/chroma_db/
-PSlevel1/output/
-PSlevel1/outputs/
+chroma_db/
+*.sqlite
+*.sqlite3
+*.db
+
+# ==============================
+
+# IDE settings
+
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+
+# Operating system files
+
+# ==============================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+
+# Logs and temporary files
+
+# ==============================
+
+*.log
+*.tmp
+*.temp
+
+# ==============================
+
+# Build and test artifacts
+
+# ==============================
+
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
